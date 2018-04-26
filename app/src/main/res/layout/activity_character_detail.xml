@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/coordinatorLayout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true">
+  
+  <android.support.design.widget.AppBarLayout
+    android:id="@+id/appBar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/detail_app_bar_height"
+    android:fitsSystemWindows="true"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:elevation="@dimen/toolbar_elevation"
+    android:stateListAnimator="@animator/appbar_elevation">
+    
+    <android.support.design.widget.CollapsingToolbarLayout
+      android:id="@+id/collapsing_toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_scrollFlags="scroll|exitUntilCollapsed"
+      app:contentScrim="?attr/colorPrimary"
+      app:expandedTitleMarginStart="@dimen/activity_horizontal_margin"
+      app:expandedTitleMarginEnd="@dimen/activity_horizontal_margin"
+      app:expandedTitleMarginBottom="@dimen/expanded_toolbar_title_margin_bottom"
+      app:expandedTitleTextAppearance="@style/CollapsingToolbarLayoutExpandedTitleTextAppearance"
+      app:collapsedTitleTextAppearance="@style/CollapsingToolbarLayoutCollapsedTitleTextAppearance"
+      android:fitsSystemWindows="true">
+      
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+        
+        <ImageView
+          android:id="@+id/photo"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scaleType="centerCrop"
+          android:fitsSystemWindows="true"
+          app:layout_collapseMode="parallax"/>
+        
+        <LinearLayout
+          android:id="@+id/meta_bar"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/expanded_toolbar_height"
+          android:background="#333"
+          android:layout_gravity="bottom"
+          android:orientation="vertical"
+          android:paddingLeft="@dimen/detail_inner_horiz_margin"
+          android:paddingRight="@dimen/detail_inner_horiz_margin"
+          android:paddingTop="@dimen/detail_metabar_vert_padding"
+          android:paddingBottom="@dimen/detail_metabar_vert_padding"
+          android:gravity="bottom">
+        
+        </LinearLayout>
+      
+      </FrameLayout>
+      
+      <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_article"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_collapseMode="pin"
+        app:contentInsetStartWithNavigation="@dimen/toolbar_title_left_padding"
+        app:elevation="@dimen/toolbar_elevation"/>
+    
+    </android.support.design.widget.CollapsingToolbarLayout>
+  
+  </android.support.design.widget.AppBarLayout>
+  
+  <android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:focusableInTouchMode="true">
+  
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:paddingTop="@dimen/description_padding_top"
+        android:paddingBottom="@dimen/description_padding_bottom"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:text="@string/description_text">
+  
+      </TextView>
+      
+      <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#dadada">-->
+        <!---->
+      <!--</View>-->
+      
+      <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/description_padding_top"
+        android:paddingBottom="@dimen/description_padding_bottom"
+        android:textAlignment="center"
+        android:background="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="14sp"
+        tools:text="Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider.">
+        
+      </TextView>
+  
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:paddingTop="@dimen/description_padding_top"
+        android:paddingBottom="@dimen/description_padding_bottom"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:text="@string/comics_text">
+  
+      </TextView>
+      
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+  
+        <TextView
+          android:id="@+id/noComicsText"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingStart="@dimen/activity_horizontal_margin"
+          android:paddingEnd="@dimen/activity_horizontal_margin"
+          android:paddingTop="@dimen/description_padding_top"
+          android:paddingBottom="@dimen/description_padding_bottom"
+          android:textAlignment="center"
+          android:background="@android:color/white"
+          android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+          android:textSize="14sp"
+          android:text="@string/no_comics_text"
+          android:visibility="invisible"/>
+  
+        <ProgressBar
+          android:id="@+id/progressBar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          style="@style/Widget.AppCompat.ProgressBar"
+          android:visibility="invisible"/>
+  
+        <android.support.v7.widget.RecyclerView
+          android:id="@+id/recycler_view_comics"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:paddingRight="@dimen/recycler_view_padding_right"
+          android:paddingTop="@dimen/recycler_view_padding_top"
+          android:background="@android:color/white"
+          android:nestedScrollingEnabled="false"
+          android:visibility="invisible"/>
+        
+      </FrameLayout>
+  
+    </LinearLayout>
+  
+  </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

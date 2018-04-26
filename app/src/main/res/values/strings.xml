@@ -1,0 +1,10 @@
+<resources>
+  <string name="app_name">MarvelCharacters</string>
+  <string name="marvel_characters">Marvel Characters</string>
+  <string name="retry">Try Again</string>
+  <string name="no_internet_connection">No internet connection</string>
+  <string name="description_text">Description</string>
+  <string name="comics_text">Comics</string>
+  <string name="no_comics_text">No Comics</string>
+  <string name="request_error">Some error occurred in the request</string>
+</resources>

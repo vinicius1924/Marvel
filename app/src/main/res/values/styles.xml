@@ -1,0 +1,47 @@
+<resources>
+  
+  <!-- Base application theme. -->
+  <style name = "AppTheme" parent="AppTheme.Base">
+    <item name="android:windowContentTransitions">true</item>
+    <!--
+        Quando for false então a transição de entrada dessa activity irá esperar
+        até que a transição de saída da outra activity termine para que ela inicie.
+        Caso contrário a transição de entrada irá começar assim que possível
+    -->
+    <item name="android:windowAllowEnterTransitionOverlap">false</item>
+    <item name="android:windowAllowReturnTransitionOverlap">false</item>
+  </style>
+  
+  <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/purple_500</item>
+    <item name="colorPrimaryDark">@color/purple_700</item>
+    <item name="colorAccent">@color/pink_A200</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+  
+  <style name="AppTheme.Main">
+    <!-- Transição que será aplicada quando a activity sair da tela -->
+    <item name="android:windowExitTransition">@transition/fade</item>
+    <item name="android:windowSharedElementReturnTransition">@transition/change_image_transform</item>
+  </style>
+  
+  <style name="AppTheme.CharacterDetail">
+    <!-- Transição que será aplicada quando a activity entrar da tela -->
+    <!--<item name="android:windowEnterTransition">@transition/slide_right</item>-->
+    <item name="android:windowEnterTransition">@transition/fade</item>
+    <item name="android:windowSharedElementEnterTransition">@transition/change_image_transform</item>
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    <item name="android:statusBarColor">@android:color/transparent</item>
+  </style>
+  
+  <style name="CollapsingToolbarLayoutExpandedTitleTextAppearance" parent="@android:style/TextAppearance.Large">
+    <item name="android:textStyle">bold</item>
+  </style>
+  
+  <style name="CollapsingToolbarLayoutCollapsedTitleTextAppearance" parent="@android:style/TextAppearance.Medium">
+    <item name="android:textStyle">bold</item>
+  </style>
+
+</resources>

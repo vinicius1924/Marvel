@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="recycler_view_padding_left">4dp</dimen>
+  <dimen name="recycler_view_padding_right">4dp</dimen>
+  <dimen name="recycler_view_padding_top">8dp</dimen>
+  <dimen name="recycler_view_padding_bottom">8dp</dimen>
+  <dimen name="toolbar_title_left_padding">72dp</dimen>
+  <dimen name="cardview_margin">4dp</dimen>
+  <dimen name="comics_recycler_view_margin_top">4dp</dimen>
+  <dimen name="cardview_elevation">2dp</dimen>
+  <dimen name="cardview_pressed_translation_z">8dp</dimen>
+  <dimen name="detail_app_bar_height">320dp</dimen>
+  <dimen name="toolbar_elevation">4dp</dimen>
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="expanded_toolbar_title_margin_bottom">40dp</dimen>
+  <dimen name="expanded_toolbar_height">90dp</dimen>
+  <dimen name="detail_inner_horiz_margin">16dp</dimen>
+  <dimen name="detail_metabar_vert_padding">16dp</dimen>
+  <dimen name="content_float_action_button_vertical_space">28dp</dimen>
+  <dimen name="vertical_content_space">8dp</dimen>
+  <dimen name="fab_margin">16dp</dimen>
+  <dimen name="fab_elevation">6dp</dimen>
+  <dimen name="fab_press_translation_z">12dp</dimen>
+  <dimen name="single_line_list_item_height">48dp</dimen>
+  <dimen name="single_line_list_item_padding_left">16dp</dimen>
+  <dimen name="single_line_list_item_padding_right">16dp</dimen>
+  <dimen name="single_line_list_item_text_size">16sp</dimen>
+  <dimen name="spacing_large">32dp</dimen>
+  <dimen name="spacing_huge">64dp</dimen>
+  <dimen name="description_padding_top">16dp</dimen>
+  <dimen name="description_padding_bottom">16dp</dimen>
+</resources>
