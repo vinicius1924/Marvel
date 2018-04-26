@@ -119,7 +119,7 @@ public class MainActivityPresenterTest
     mainActivityPresenter.loadCharacters(null, Schedulers.trampoline(), Schedulers.trampoline());
     /**
      * Verifica se o método showProgressBar é chamado durante a execução
-     * do método loadMoviesByPreference no presenter
+     * do método loadCharacters no presenter
      */
     verify(mainActivityMvpView).showProgressBar();
   }
@@ -141,8 +141,8 @@ public class MainActivityPresenterTest
 
     mainActivityPresenter.loadCharacters(null, Schedulers.trampoline(), Schedulers.trampoline());
     /**
-     * Verifica se o método showProgressBar é chamado durante a execução
-     * do método loadMoviesByPreference no presenter
+     * Verifica se o método getCharactersResponse é chamado durante a execução
+     * do método loadCharacters no presenter
      */
     verify(mainActivityMvpView).getCharactersResponse(getCharactersResponse);
   }
@@ -170,8 +170,8 @@ public class MainActivityPresenterTest
 
     mainActivityPresenter.loadCharacters(null, Schedulers.trampoline(), Schedulers.trampoline());
     /**
-     * Verifica se o método showProgressBar é chamado durante a execução
-     * do método loadMoviesByPreference no presenter
+     * Verifica se o método hideProgressBar é chamado durante a execução
+     * do método loadCharacters no presenter
      */
     verify(mainActivityMvpView).hideProgressBar();
   }
@@ -192,8 +192,8 @@ public class MainActivityPresenterTest
 
     mainActivityPresenter.loadCharacters(null, Schedulers.trampoline(), Schedulers.trampoline());
     /**
-     * Verifica se o método showProgressBar é chamado durante a execução
-     * do método loadMoviesByPreference no presenter
+     * Verifica se o método hideProgressBar é chamado durante a execução
+     * do método loadCharacters no presenter
      */
     verify(mainActivityMvpView).hideProgressBar();
   }
