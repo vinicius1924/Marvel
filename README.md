@@ -7,7 +7,7 @@ These instructions will get you a copy of the project up and running on your loc
 Clone the github repository
 
 ```
-$ git clone https://github.com/vinicius1924/Marvel-Characters.git
+$ git clone https://github.com/vinicius1924/Marvel.git
 ```
 
 Open Android Studio and click: File -> Open and choose the build.gradle file inside the project folder.
